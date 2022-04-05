@@ -1,0 +1,70 @@
+
+
+{% extends 'base.html' %}
+{% block title %}
+Study Page
+{% endblock %}
+{% block content %}
+<h2 style="margin: 30px; text-align: left;">Spróbuj rozwiązać poniższe zadania:</h2>
+<div class="col-10" style="margin: 30px;">
+   <br>
+   <table class="table table-hover table-primary table-striped">
+      <thead>
+         <tr>
+            <!-- Your Columns HERE -->
+            <th scope="col">Numer</th>
+            <th scope="col">Treść zadania</th>
+            <th scope="col">Odpowiedzi</th>
+         </tr>
+      </thead>
+      <tbody>
+         <!-- Your rows inside the table HERE: -->
+         <tr>
+            <td>{{ exercise1.name }}</td>
+            <td >{{ exercise1.description }}</td>
+            <td>
+               <form action="/study" method="post" role="form">
+                  {{ form1.hidden_tag() }}
+                  {{ form1.b1.label }} {{ form1.b1 }}<br>
+                  {{ form1.s1(class="btn btn-block btn-primary") }}
+               </form>
+            </td>
+         </tr>
+         <tr>
+            <td>{{ exercise2.name }}</td>
+            <td>{{ exercise2.description }}</td>
+            <td>
+               <form action="/study" method="post" role="form">
+                  {{ form2.hidden_tag() }}
+                  {{ form2.b2.label }} {{ form2.b2 }}<br>
+                  {{ form2.s2(class="btn btn-block btn-primary") }}
+               </form>
+            </td>
+         </tr>
+         <tr>
+            <td>{{ exercise3.name }}</td>
+            <td>{{ exercise3.description }}</td>
+            <td>
+               <form action="/study" method="post" role="form">
+                  {{ form3.hidden_tag() }}
+                  {{ form3.b3.label }} {{ form3.b3 }}<br>
+                  {{ form3.s3(class="btn btn-block btn-primary") }}
+               </form>
+            </td>
+         </tr>
+         <tr>
+            <td>{{ exercise4.name }}</td>
+            <td>{{ exercise4.description }}</td>
+            <td>
+               <form action="/study" method="post" role="form">
+                  {{ form4.hidden_tag() }}
+                  {{ form4.b4.label }} {{ form4.b4 }}<br>
+                  {{ form4.s4(class="btn btn-block btn-primary") }}
+               </form>
+            </td>
+         </tr>
+      </tbody>
+   </table>
+</div>
+{% endblock %}
+
