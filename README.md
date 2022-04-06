@@ -11,3 +11,5 @@ flask-bcrypt
 flask-login
 flask-bootstrap
 flask-wtf
+![Zrzut ekranu (1549)](https://user-images.githubusercontent.com/103037119/162064233-e7718675-bbb5-455c-8cc0-1f5f83d68217.png)
+![Zrzut ekranu (1550)](https://user-images.githubusercontent.com/103037119/162064235-51b90867-61d1-4a5d-a3b6-5ab64e77ef4e.png)
